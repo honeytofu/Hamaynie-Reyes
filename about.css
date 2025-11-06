@@ -1,0 +1,198 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    background: radial-gradient(circle, #f5bdc9,#f8adad, #e69dcb, #c0a7db);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color:#1c1a1d;
+}
+
+/* Respomsive display */
+.pc, .laptop, .tablet, .mobile{
+    position: fixed;
+    top:10px; right:10px;
+    padding:5px 10px;
+    border-radius:5px;
+    background:rgba(255,255,255,.8);
+    z-index:1000;
+    font-size:12px;
+    color:#4f4f4f;
+}
+    @media (min-width: 0px) and (max-width: 768px) {
+        .pc, .laptop, .tablet { 
+            display: none; 
+        }
+        .mobile {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .pc, .laptop, .mobile { 
+            display: none; 
+        }
+        .tablet {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .pc, .tablet, .mobile { 
+            display: none; 
+        }
+        .laptop {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .laptop, .tablet, .mobile { 
+            display: none; 
+        }
+        .pc {
+            color: #4f4f4f;
+            font-size: 12px;
+            font-family: 'Poppins';
+        }
+    }
+
+/* Respomsive display */
+nav{
+    position: sticky;
+    top:0;
+    z-index:999;
+    background:rgba(255, 190, 237, 0.255);
+    backdrop-filter:blur(4px);
+    padding:20px 0;
+}
+    nav ul{
+        list-style:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+    nav li{
+        padding:10px 20px;
+        border-radius:20px;
+        transition:background .3s;
+    }
+    nav li:hover{
+        background:rgba(230,208,179,.3)
+    }
+        nav a{
+            text-decoration:none;
+            color:#000;
+            font-weight:400;
+        }
+
+/* Nahi name on top */
+.nahi{
+    font-size:30px;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#1c1a1d;
+    font-family: 'Poppins';
+}
+
+/* My containers */
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:20px;
+}
+    /* Header container */
+    .header{
+        grid-column:1/-1;
+        background:#ffe0c8;
+        padding:30px;
+        border-radius:20px;
+        display:flex;
+        align-items:center;
+        gap:30px;
+    }
+        .header-text{
+            flex:1 1 60%
+        }
+        .header-text h1{
+            font-size:2.5em;margin-bottom:10px
+        }
+        .header-text p{
+            margin-bottom:15px;line-height:1.6;color:#4f4f4f
+        }
+        .header-pic{
+            flex:0 0 250px
+        }
+        .header-pic img{
+            width:100%;border-radius:10px
+        }
+        @media (max-width:768px){
+            .header{flex-direction:column;text-align:center}
+            .header-text{text-align:center}
+            .header-pic{max-width:250px}
+        }
+
+    /* Other containers */
+    .info,.skills,.edu,.awards,.hobbies,.projects{
+        background:#FFD3E0;
+        padding:25px;
+        border-radius:15px;
+        box-shadow:0 4px 6px rgba(0,0,0,.1);
+        transition:transform .3s;
+    }
+        .info:hover,.skills:hover,.edu:hover,.awards:hover,.hobbies:hover,.projects:hover{
+            transform:translateY(-5px);
+            background: #ffffdc;
+        }
+            h1{
+                margin-bottom:15px;font-size:1.5em
+            }
+                ul{
+                    list-style:none;padding:0
+                }
+                    li{
+                        padding:5px 0;color:#4f4f4f
+                    }
+                        .info li::before{
+                            content:"• ";color:#1c1a1d;font-weight:bold
+                        }
+                            .skills li::before,.hobbies li::before{
+                                content:"▸ ";color:#1c1a1d
+                            }
+                                p{
+                                    line-height:1.6;color:#4f4f4f
+                                }
+
+/* Footer area */
+footer{
+    footer{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #72727200;
+}
+    .footer{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+
+    /* My credits */
+    .ctto{
+        background-color: #0d000f;
+        padding: 20px;
+        text-align: center;
+    }
+        .ctto p{
+            color: aliceblue;
+        }
+}

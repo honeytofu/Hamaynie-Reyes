@@ -1,0 +1,210 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  background: radial-gradient(circle, #ebf5bd,#f8adad, #e69dcb, #c0a7db);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color:#1c1a1d;
+}
+
+/* Respomsive display */
+.pc, .laptop, .tablet, .mobile {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+    @media (min-width: 0px) and (max-width: 768px) {
+        .pc, .laptop, .tablet { 
+            display: none; 
+        }
+        .mobile {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .pc, .laptop, .mobile { 
+            display: none; 
+        }
+        .tablet {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .pc, .tablet, .mobile { 
+            display: none; 
+        }
+        .laptop {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .laptop, .tablet, .mobile { 
+            display: none; 
+        }
+        .pc {
+            color: #4f4f4f;
+            font-size: 12px;
+            font-family: 'Poppins';
+        }
+    }
+
+    
+      .projects {
+      width: 100%;
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    .proj-title {
+      text-align: center;
+      font-size: 2.4em;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+    .proj-grid {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .proj-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border-radius: 25px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .proj-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+    .proj-card h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #1c1a1d;
+    }
+    .proj-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .proj-card p {
+      font-size: 0.95em;
+      color: #4f4f4f;
+      line-height: 1.5;
+    }
+
+
+
+/* ---- navi :) ---- */
+nav{
+    position: sticky;   /* keeps it on top */
+    top:0;
+    z-index:999;
+    background:rgba(255, 190, 237, 0.255);
+    backdrop-filter:blur(4px);
+    padding:20px 0;
+}
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+        nav li{
+            padding:10px 20px;
+            border-radius:20px;
+            transition:background .3s;
+        }
+        nav li:hover{background:rgba(230,208,179,.3)}
+        nav a{
+            text-decoration:none;
+            color:#000;
+            font-weight:400;
+        }
+        .nahi{
+            font-size:30px;
+            font-weight:700;
+            text-transform:uppercase;
+            color:#1c1a1d;
+        }
+
+/* ---- foooter ---- */
+footer{
+    footer{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #72727200;
+    }
+    .footer{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+    .icons a i{
+        font-size: 2em;
+        color: #000000;
+        opacity: 0.9;
+    }
+    .icons img{
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .ctto{
+        background-color: #0d000f;
+        padding: 20px;
+        text-align: center;
+    }
+    .ctto p{
+        color: aliceblue;
+    }
+    .designer{
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform .25s ease;
+}
+.icons img:hover {
+    transform: translateY(-8px);      
+}
+
+}
+    .shortinfo{
+        text-align: center;
+    }

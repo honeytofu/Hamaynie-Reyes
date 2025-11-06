@@ -1,0 +1,251 @@
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    background: radial-gradient(circle, #ebf5bd,#f8adad, #e69dcb, #c0a7db);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color:#1c1a1d;
+}
+
+/* Respomsive display*/
+.pc, .laptop, .tablet, .mobile {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+    @media (min-width: 0px) and (max-width: 768px) {
+        .pc, .laptop, .tablet { 
+            display: none; 
+        }
+        .mobile {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .pc, .laptop, .mobile { 
+            display: none; 
+        }
+        .tablet {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .pc, .tablet, .mobile { 
+            display: none; 
+        }
+        .laptop {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .laptop, .tablet, .mobile { 
+            display: none; 
+        }
+        .pc {
+            color: #4f4f4f;
+            font-size: 12px;
+            font-family: 'Poppins';
+        }
+    }
+
+        
+/* navi :) */
+nav{
+    position: sticky;
+    top:0;
+    z-index:999;
+    background:rgba(255, 190, 237, 0.255);
+    backdrop-filter:blur(4px);
+    padding:20px 0;
+}
+    nav ul{
+        list-style:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+    nav li{
+        padding:10px 20px;
+        border-radius:20px;
+        transition:background .3s;
+    }
+        nav li:hover{
+            background:rgba(230,208,179,.3)
+        }
+    nav a{
+        text-decoration:none;
+        color:#000;
+        font-weight:400;
+    }
+
+    .nahi{
+        font-size:30px;
+        font-weight:700;
+        text-transform:uppercase;
+        color:#1c1a1d;
+    }
+
+/* contact card/container */ 
+.wrapper{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    margin:40px 20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+    .contact-card{
+        background:rgba(255,255,255,.85);
+        backdrop-filter:blur(8px);
+        border-radius:30px; 
+        box-shadow:0 8px 20px rgba(0,0,0,.1);
+        text-align:center;
+        width:100%;
+        max-width: 460px;
+        padding: 45px 60px;  
+    }
+        .contact-card a{
+            text-decoration: none;
+            color: #000;
+        }
+            .contact-card h1{
+                font-size:2em;
+                margin-bottom:25px;
+                letter-spacing:1px
+            }
+
+    .contact-item{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:12px;
+        margin:18px 0;
+        font-size:1.05em;
+        position: relative;
+        transition: color .25s ease;
+    }
+        .contact-item span{
+            font-weight:600
+        }
+            .contact-item::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -4px;              
+                width: 100%;
+                height: 2px;
+                background: #e69dcb;
+                border-radius: 2px;
+                transform: scaleX(0);     
+                transform-origin: left;
+                transition: transform .3s ease, box-shadow .3s ease;
+                box-shadow: 0 0 0 #e69dcb;
+            }
+                .contact-item:hover::after {
+                    transform: scaleX(1);
+                    box-shadow: 0 0 8px 1px #e69dcb; 
+                }
+                    /*to show email svg*/
+                    .contact-item:nth-child(3) {
+                        padding: 10px 0;
+                        font-size: 1.05em;
+                    }
+                        .contact-item:nth-child(3) svg {
+                        width: 30px;
+                        height: 30px;
+                        }
+
+    .icon{
+        width:26px;height:26px;
+        fill:#e69dcb
+    }
+
+    /* image on the right */
+    .side-img{
+      width:280px;
+      max-width:100%;
+      border-radius:25px;
+      box-shadow:0 8px 20px rgba(0,0,0,.15);
+    }
+
+/* footer*/
+footer{
+    footer{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #72727200;
+    }
+        .footer{
+            width: 100%;
+            padding: 70px 30px 20px;
+        }
+            .icons{
+                display: flex;
+                justify-content: center;
+            }
+                .icons a i{
+                    font-size: 2em;
+                    color: #000000;
+                    opacity: 0.9;
+                }
+                .icons img{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 10px;
+                    transition: transform .25s ease;
+                }
+}
+.icons img:hover {
+    transform: translateY(-8px);
+}
+
+    .shortinfo{
+        text-align: center;
+    }
+    
+.wrapper {
+    flex: 1;                     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+            .ctto{
+                background-color: #0d000f;
+                padding: 20px;
+                text-align: center;
+            }
+                .ctto p{
+                    color: aliceblue;
+                }
+            .designer{
+                opacity: 0.7;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 400;
+                margin: 0px 5px;
+        }
