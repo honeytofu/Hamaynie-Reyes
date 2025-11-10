@@ -19,15 +19,21 @@ body{
     color:#4f4f4f;
 }
     @media (min-width: 0px) and (max-width: 768px) {
-        .pc, .laptop, .tablet { 
-            display: none; 
-        }
-        .mobile {
-        color: #4f4f4f;
-        font-size: 12px;
-        font-family: 'Poppins';
-        }
+        .header{
+        flex-direction: column;
+        text-align: center;
     }
+    .header-text{
+        text-align: center;
+    }
+
+    /* so that the img will be on top on mobile*/
+    .header-pic{
+        max-width: 250px;
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
 
     @media (min-width: 768px) and (max-width: 992px) {
         .pc, .laptop, .mobile { 
@@ -213,3 +219,4 @@ nav a.active-page {
         opacity: 1;
         transform: translateY(0);
     }
+
