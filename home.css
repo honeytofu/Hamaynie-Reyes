@@ -103,7 +103,7 @@ nav{
     }   
 
 /* My image */
-.me img{
+.mee img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -182,3 +182,4 @@ nav a.active-page {
         opacity: 1;
         transform: translateY(0);
     }
+
