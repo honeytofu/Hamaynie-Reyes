@@ -167,6 +167,27 @@ footer{
 
 }
 
+/* Footer area */
+footer{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #72727200;
+}
+.footer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+/* My credits */
+.ctto{
+    background-color: #0d000f;
+    padding: 20px;
+    text-align: center;
+}
+.ctto p{
+    color: aliceblue;
+}
+
 /* more pretty things */
 nav a.active-page {
     background: rgba(230, 208, 179, 0.5);
@@ -183,3 +204,4 @@ nav a.active-page {
         opacity: 1;
         transform: translateY(0);
     }
+
