@@ -7,33 +7,32 @@ body{
     color:#1c1a1d;
 }
 
-/* Respomsive display */
-.pc, .laptop, .tablet, .mobile{
+/* Responsive display*/
+.pc, .laptop, .tablet, .mobile {
     position: fixed;
-    top:10px; right:10px;
-    padding:5px 10px;
-    border-radius:5px;
-    background:rgba(255,255,255,.8);
-    z-index:1000;
-    font-size:12px;
-    color:#4f4f4f;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
 }
-    @media (min-width: 0px) and (max-width: 768px) {
-        .header{
-        flex-direction: column;
-        text-align: center;
-    }
-    .header-text{
-        text-align: center;
-    }
 
-    /* so that the img will be on top on mobile*/
-    .header-pic{
+    @media (min-width: 0px) and (max-width: 768px) {
+        .pc, .laptop, .tablet { 
+            display: none; 
+        }
+        .mobile {
+        color: #4f4f4f;
+        font-size: 12px;
+        font-family: 'Poppins';
+        }
+        .header-pic{
         max-width: 250px;
         order: -1;
         margin-bottom: 20px;
     }
-}
+    }
 
     @media (min-width: 768px) and (max-width: 992px) {
         .pc, .laptop, .mobile { 
@@ -68,7 +67,7 @@ body{
         }
     }
 
-/* Respomsive display */
+/* nav area */
 nav{
     position: sticky;
     top:0;
@@ -219,4 +218,5 @@ nav a.active-page {
         opacity: 1;
         transform: translateY(0);
     }
+
 
