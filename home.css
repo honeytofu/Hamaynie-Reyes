@@ -7,7 +7,7 @@ body{
     font-family: 'Poppins';
 }
 
-/* Responsive display */
+/* Respomsive display */
 .pc, .laptop, .tablet, .mobile {
     position: fixed;
     top: 10px;
@@ -164,7 +164,6 @@ footer{
         .ctto p{
             color: aliceblue;
         }
-
 }
 
 /* more pretty things */
@@ -183,8 +182,3 @@ nav a.active-page {
         opacity: 1;
         transform: translateY(0);
     }
-
-
-
-
-
