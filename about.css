@@ -67,7 +67,8 @@ body{
         }
     }
 
-/* nav area */
+
+/* navigation area */
 nav{
     position: sticky;
     top:0;
@@ -218,5 +219,3 @@ nav a.active-page {
         opacity: 1;
         transform: translateY(0);
     }
-
-
