@@ -7,7 +7,7 @@ body{
     font-family: 'Poppins';
 }
 
-/* Respomsive display */
+/* Responsive display */
 .pc, .laptop, .tablet, .mobile {
     position: fixed;
     top: 10px;
@@ -183,5 +183,6 @@ nav a.active-page {
         opacity: 1;
         transform: translateY(0);
     }
+
 
 
